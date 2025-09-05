@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.widget.TextView
 import android.app.Activity
 import android.content.Intent
+import android.widget.Button
 
 class ResultActivity : AppCompatActivity() {
     companion object {
@@ -16,6 +17,13 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        val backButton = findViewById<Button>(R.id.back)
+
+        backButton.setOnClickListener{
+            finish()
+        }
+
         if(intent != null){
             val colorCode = intent.getStringExtra(COLOR_KEY)
             val backgroundScreen =

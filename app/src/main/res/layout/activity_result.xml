@@ -15,4 +15,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/text_display"
         android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/text_display"
+        app:layout_constraintTop_toBottomOf="@+id/color_code_result_message" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
